@@ -22,4 +22,9 @@ function addTwoDigits (input) {
 
 console.log(addTwoDigits(29))
 
+
+// arrayWithIntegers.reduce( (previousVal,currentElement) =>previousVal += currentElement, 0)
+
+// 0 means initial value 
+
 //  when it loops in the beginning sum is 0, 2nd time it loops, it becomes 2 (assuming that the N is 29) and then the 3rd time becomes 9.
