@@ -12,13 +12,14 @@
 // For yourLeft = 15, yourRight = 10, friendsLeft = 15 and friendsRight = 9, the output should be areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = false.
 
 function areEquallyStrong (yourLeft, yourRight, friendsLeft, friendsRight) {
-    if( (yourLeft + yourRight) === (friendsLeft + friendsRight)) {
+    // if( (yourLeft + yourRight) === (friendsLeft + friendsRight)) {
 
-        return true
-    }
-    else  {
-        return false
-    }
+    //     return true
+    // }
+    // else  {
+    //     return false
+    // }
+    return (yourLeft + yourRight) === (friendsLeft + friendsRight);
 }
 
 console.log(areEquallyStrong(10,15,15,10));
