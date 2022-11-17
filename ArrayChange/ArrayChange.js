@@ -18,3 +18,21 @@
 
 // [output] integer
 // The minimal number of moves needed to obtain a strictly increasing sequence from inputArray. It's guaranteed that for the given test cases the answer always fits signed 32-bit integer type.
+
+
+
+function arrayChange(inputArray) {
+    const copiedArray = [...inputArray];
+    let minMoves = 0;
+
+    for (let i = 0; i < copiedArray.length - 1; i++) {
+        const currentMoves = copiedArray[i] - copiedArray[i + 1] + 1;
+        copiedArray[i + 1] = copiedArray[i + 1] + currentMoves;
+        minMoves += currentMoves;
+    }
+
+    return minMoves;
+}
+
+console.log(arrayChange([1, 1, 1]));
+console.log(arrayChange([3, 0, 1]));
