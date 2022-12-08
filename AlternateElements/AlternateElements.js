@@ -14,3 +14,12 @@ class Solution {
       
     }
   }
+
+  // module operator is % the remainder
+
+
+// key take aways
+// spread operators = shows everything in one single line
+//  console.log it puts a new line character at the end of your console.log including spaces
+// 
+
