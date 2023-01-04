@@ -5,11 +5,15 @@ function sumOfArray(inputArray, number){
 
     let numSum = 0;
 
-    for (let i = 0; i < inputArray.length; i++){
-        // numSum += inputArray[i]
+    // for (let i = 0; i < inputArray.length; i++){
+    //     // numSum += inputArray[i]
 
-        numSum = numSum + inputArray[i]
-    }
+    //     numSum = numSum + inputArray[i]
+    // }
+
+    inputArray.forEach((kimchi) => {
+        numSum += kimchi;
+    }) 
 
     return numSum
 }
